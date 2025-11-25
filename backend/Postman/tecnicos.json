@@ -1,0 +1,23 @@
+{
+  "tecnicos": [
+    {
+      "id": "1",
+      "matricula": 12345,
+      "ativo": true,
+      "nome": "João Silva",
+      "sexo": "M",
+      "idade": 35,
+      "endereco": {
+        "logradouro": "Rua Principal",
+        "numero": 123,
+        "bairro": "Centro",
+        "municipio": "São Paulo",
+        "UF": "SP",
+        "cep": "01001-000"
+      },
+      "dataNasc": "1988-05-15",
+      "cpf": "12345678901",
+      "telefone": "11999999999"
+    }
+  ]
+}

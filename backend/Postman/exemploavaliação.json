@@ -1,0 +1,95 @@
+{
+  "pacienteId": 1,
+  "tecnicoId": 3,
+  "formularioId": 3,
+  "respostas": [
+    {
+      "perguntaId": 1,
+      "valor": "\"Regular ou ruim\""
+    },
+    {
+      "perguntaId": 2,
+      "valor": "\"Pior\""
+    },
+    {
+      "perguntaId": 3,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 4,
+      "valor": "\"Não ou não controla o dinheiro por outros motivos que não a saúde\""
+    },
+    {
+      "perguntaId": 5,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 6,
+      "valor": "\"Não\""
+    },
+    {
+      "perguntaId": 7,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 8,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 9,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 10,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 11,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 12,
+      "valor": "\"Não\""
+    },
+    {
+      "perguntaId": 13,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 14,
+      "valor": "\"Não\""
+    },
+    {
+      "perguntaId": 15,
+      "valor": "[\"Perda de peso não intencional de 4,5 kg ou 5% do peso corporal no último ano ou 6 kg nos últimos 6 meses ou 3 kg no último mês\", \"Circunferência da panturrilha < 31 cm\"]"
+    },
+    {
+      "perguntaId": 16,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 17,
+      "valor": "\"3 vezes ou mais\""
+    },
+    {
+      "perguntaId": 18,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 19,
+      "valor": "\"Não\""
+    },
+    {
+      "perguntaId": 20,
+      "valor": "\"Sim\""
+    },
+    {
+      "perguntaId": 21,
+      "valor": "[\"Cinco ou mais doenças crônicas\", \"Uso regular de cinco ou mais medicamentos diferentes\"]"
+    }
+  ],
+  "pontuacaoTotal": 15,
+  "pontuacaoMaxima": 20,
+  "dataCriacao": "2023-11-15T10:30:00Z",
+  "dataAtualizacao": "2023-11-15T10:35:00Z"
+}

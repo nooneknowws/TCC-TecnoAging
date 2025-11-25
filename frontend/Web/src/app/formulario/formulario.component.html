@@ -1,0 +1,192 @@
+<div class="container mt-4" *ngIf="formulario">
+    <div *ngIf="showSuccessAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Sucesso!</strong> Avaliação salva com sucesso.
+        <div class="mt-2">
+            <a [routerLink]="['/tecnico']" class="alert-link me-3">Voltar para a página inicial</a>
+            <a *ngIf="pacienteId" [routerLink]="['/tecnico/paciente/ver-perfil']" [queryParams]="{ id: pacienteId }" class="alert-link">Ver perfil do paciente</a>
+        </div>
+        <button type="button" class="btn-close" (click)="fecharAlerta()" aria-label="Close"></button>
+    </div>
+    
+    <div *ngIf="showErrorAlert" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Erro!</strong> {{errorMessage}}
+        <button type="button" class="btn-close" (click)="fecharAlerta()" aria-label="Close"></button>
+    </div>
+
+    <div class="progress mb-4">
+      <div class="progress-bar" 
+           [style.width.%]="(etapaAtual / (formulario.etapas!.length - 1)) * 100">
+        {{etapaAtual + 1}} / {{formulario.etapas!.length}}
+      </div>
+    </div>
+  
+    <div class="card" [class.opacity-50]="avaliacaoSalva">
+      <div class="card-header">
+        <h4>{{formulario.titulo}}</h4>
+      </div>
+  
+      <div class="card-body">
+        <h5 class="card-title">{{formulario.etapas![etapaAtual].titulo}}</h5>
+        <p class="card-text">{{formulario.etapas![etapaAtual].descricao}}</p>
+  
+        <form [formGroup]="formGroup">
+          <div class="mb-4" *ngFor="let pergunta of formulario.etapas![etapaAtual].perguntas; let perguntaIndex = index">
+            <hr>
+            <ng-container [ngSwitch]="pergunta.tipo">
+              
+              <!-- Input Numérico -->
+              <div *ngSwitchCase="'numero'" class="form-group">
+                <label [for]="getControlName(etapaAtual, perguntaIndex)" class="form-label fw-semibold">
+                  {{pergunta.texto}}
+                </label>
+                <input type="number" 
+                       [id]="getControlName(etapaAtual, perguntaIndex)"
+                       [formControlName]="getControlName(etapaAtual, perguntaIndex)"
+                       class="form-control"
+                       [class.is-invalid]="formGroup.get(getControlName(etapaAtual, perguntaIndex))?.invalid && 
+                                         formGroup.get(getControlName(etapaAtual, perguntaIndex))?.touched"
+                       (change)="atualizarRespostas(formGroup.value)">
+                <div class="invalid-feedback">
+                  {{getFieldError(etapaAtual, perguntaIndex)}}
+                </div>
+              </div>
+  
+              <!-- Input Tempo -->
+              <div *ngSwitchCase="'tempo'" class="form-group">
+                <label [for]="getControlName(etapaAtual, perguntaIndex)" class="form-label fw-semibold">
+                  {{pergunta.texto}}
+                </label>
+                <input type="time" 
+                       [id]="getControlName(etapaAtual, perguntaIndex)"
+                       [formControlName]="getControlName(etapaAtual, perguntaIndex)"
+                       class="form-control"
+                       [class.is-invalid]="formGroup.get(getControlName(etapaAtual, perguntaIndex))?.invalid && 
+                                         formGroup.get(getControlName(etapaAtual, perguntaIndex))?.touched"
+                       step="60"
+                       min="00:00"
+                       max="23:59"
+                       (change)="atualizarRespostas(formGroup.value)">
+                <div class="invalid-feedback">
+                  {{getFieldError(etapaAtual, perguntaIndex)}}
+                </div>
+              </div>
+  
+              <!-- Radio Buttons -->
+              <div *ngSwitchCase="'radio'" class="form-group">
+                <label class="form-label fw-semibold">{{pergunta.texto}}</label>
+                <div class="form-check" *ngFor="let opcao of pergunta.opcoes">
+                  <input class="form-check-input" 
+                         type="radio" 
+                         [id]="getControlName(etapaAtual, perguntaIndex) + opcao"
+                         [formControlName]="getControlName(etapaAtual, perguntaIndex)"
+                         [value]="opcao"
+                         (change)="atualizarRespostas(formGroup.value)">
+                  <label class="form-check-label" [for]="getControlName(etapaAtual, perguntaIndex) + opcao">
+                    {{opcao}}
+                  </label>
+                </div>
+                <div class="invalid-feedback" *ngIf="formGroup.get(getControlName(etapaAtual, perguntaIndex))?.invalid && 
+                                                    formGroup.get(getControlName(etapaAtual, perguntaIndex))?.touched">
+                  {{getFieldError(etapaAtual, perguntaIndex)}}
+                </div>
+              </div>
+  
+              <!-- Checkbox múltiplo -->
+              <div *ngSwitchCase="'checkbox'" class="form-group">
+                <label class="form-label fw-semibold">{{pergunta.texto}}</label>
+                
+                <ng-container *ngIf="pergunta.opcoes; else singleCheckbox">
+                  <div [formArrayName]="getControlName(etapaAtual, perguntaIndex)">
+                    <div class="form-check" *ngFor="let opcao of pergunta.opcoes; let i = index">
+                      <input class="form-check-input" 
+                             type="checkbox" 
+                             [id]="getControlName(etapaAtual, perguntaIndex) + '_' + i"
+                             [formControlName]="i"
+                             [class.is-invalid]="getCheckboxFormArray(etapaAtual, perguntaIndex).invalid && 
+                                                getCheckboxFormArray(etapaAtual, perguntaIndex).touched"
+                             (change)="atualizarRespostas(formGroup.value)">
+                      <label class="form-check-label" 
+                             [for]="getControlName(etapaAtual, perguntaIndex) + '_' + i">
+                        {{opcao}}
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="invalid-feedback d-block" 
+                       *ngIf="getCheckboxFormArray(etapaAtual, perguntaIndex).errors?.['required'] && 
+                              getCheckboxFormArray(etapaAtual, perguntaIndex).touched">
+                    Selecione pelo menos uma opção
+                  </div>
+                </ng-container>
+              
+                <!-- Checkbox único -->
+                <ng-template #singleCheckbox>
+                  <div class="form-check">
+                    <input class="form-check-input" 
+                           type="checkbox" 
+                           [id]="getControlName(etapaAtual, perguntaIndex)"
+                           [formControlName]="getControlName(etapaAtual, perguntaIndex)"
+                           (change)="atualizarRespostas(formGroup.value)">
+                    <label class="form-check-label" 
+                           [for]="getControlName(etapaAtual, perguntaIndex)">
+                      {{pergunta.texto}}
+                    </label>
+                  </div>
+                </ng-template>
+              </div>
+              
+              <!-- Range Input -->
+              <div *ngSwitchCase="'range'" class="form-group">
+                <label [for]="getControlName(etapaAtual, perguntaIndex)" class="form-label fw-semibold">
+                  {{pergunta.texto}}
+                </label>
+                <div class="d-flex align-items-center gap-3">
+                  <input type="range" 
+                        [id]="getControlName(etapaAtual, perguntaIndex)"
+                        [formControlName]="getControlName(etapaAtual, perguntaIndex)"
+                        class="form-range"
+                        [min]="pergunta.validacao?.min || 0"
+                        [max]="pergunta.validacao?.max || 100"
+                        [class.is-invalid]="formGroup.get(getControlName(etapaAtual, perguntaIndex))?.invalid && 
+                                          formGroup.get(getControlName(etapaAtual, perguntaIndex))?.touched"
+                        (change)="atualizarRespostas(formGroup.value)">
+                  <span class="badge bg-secondary">
+                    {{formGroup.get(getControlName(etapaAtual, perguntaIndex))?.value || 0}}
+                  </span>
+                </div>
+                <div class="d-flex justify-content-between text-secondary small">
+                  <span>{{pergunta.validacao?.min || 0}}</span>
+                  <span>{{pergunta.validacao?.max || 100}}</span>
+                </div>
+                <div class="invalid-feedback">
+                  {{getFieldError(etapaAtual, perguntaIndex)}}
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </form>
+      </div>
+  
+      <div class="card-footer d-flex justify-content-between">
+        <button class="btn btn-secondary" 
+                (click)="etapaAnterior()" 
+                *ngIf="etapaAtual > 0">
+          Anterior
+        </button>
+        
+        <button class="btn btn-primary" 
+                *ngIf="etapaAtual < formulario.etapas!.length - 1"
+                [disabled]="!verificarValidadeEtapaAtual()"
+                (click)="proximaEtapa()">
+          Próxima
+        </button>
+        
+        <button class="btn btn-success" 
+                *ngIf="etapaAtual === formulario.etapas!.length - 1"
+                [disabled]="!formGroup.valid"
+                (click)="salvarAvaliacao()">
+          Finalizar
+        </button>
+      </div>
+    </div>
+  </div>

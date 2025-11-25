@@ -1,0 +1,3406 @@
+{
+  "auth": [
+    {
+      "cpf": "12345678901",
+      "senha": "senha123",
+      "tipo": "tecnico",
+      "userId": 1,
+      "id": "9dc2"
+    },
+    {
+      "cpf": "98765432101",
+      "senha": "senha456",
+      "tipo": "paciente",
+      "userId": 1,
+      "id": "267d"
+    }
+  ],
+  "tecnicos": [
+    {
+      "id": 1,
+      "matricula": 12345,
+      "ativo": true,
+      "nome": "João Silva",
+      "sexo": "M",
+      "idade": 35,
+      "endereco": {
+        "logradouro": "Rua Principal",
+        "numero": 123,
+        "bairro": "Centro",
+        "municipio": "São Paulo",
+        "UF": "SP",
+        "cep": "01001-000"
+      },
+      "dataNasc": "1988-05-15",
+      "cpf": "12345678901",
+      "telefone": "11999999999"
+    }
+  ],
+  "pacientes": [
+	{
+	  "id": 1,
+	  "peso": 80,
+	  "altura": 1.8,
+	  "imc": 25,
+	  "socioeconomico": "B1",
+	  "escolaridade": "Superior Completo",
+	  "nome": "João Lima",
+	  "sexo": "M",
+	  "idade": 50,
+	  "endereco": {
+		"logradouro": "Rua Principal",
+		"numero": 123,
+		"bairro": "Centro",
+		"municipio": "Recife",
+		"UF": "PE",
+		"CEP": "50001-000",
+		"complemento": "Apto 101"
+	  },
+	  "dataNasc": "1972-02-15",
+	  "cpf": "98765432101",
+	  "telefone": "(11) 99999-9998",
+	  "contatos": [
+		{
+		  "nome": "Pedro Lima",
+		  "telefone": "(11) 95555-5557",
+		  "parentesco": "Filho"
+		},
+		{
+		  "nome": "Ana Lima",
+		  "telefone": "(11) 94444-4445",
+		  "parentesco": "Filha"
+		}
+	  ],
+	  "estadoCivil": "Casado",
+	  "nacionalidade": "Brasileiro",
+	  "municipioNasc": "São Paulo",
+	  "ufNasc": "SP",
+	  "corRaca": "Branca",
+	  "rg": "12.345.678-9",
+	  "dataExpedicao": "1990-03-20",
+	  "orgaoEmissor": "SSP",
+	  "ufEmissor": "SP"
+	},
+	{
+	  "id": "2",
+	  "peso": 70,
+	  "altura": 1.65,
+	  "imc": 28,
+	  "socioeconomico": "C1",
+	  "escolaridade": "Médio Completo",
+	  "nome": "Maria Silva",
+	  "sexo": "F",
+	  "idade": 35,
+	  "endereco": {
+		"logradouro": "Avenida Brasil",
+		"numero": 456,
+		"bairro": "Santo Antônio",
+		"municipio": "Belo Horizonte",
+		"UF": "MG",
+		"CEP": "30110-000",
+		"complemento": "Casa 2"
+	  },
+	  "dataNasc": "1987-08-22",
+	  "cpf": "987.654.321-09",
+	  "telefone": "(31) 99999-9999",
+	  "contatos": [
+		{
+		  "nome": "João Silva",
+		  "telefone": "(31) 95555-5555",
+		  "parentesco": "Marido"
+		},
+		{
+		  "nome": "Luana Silva",
+		  "telefone": "(31) 94444-4444",
+		  "parentesco": "Filha"
+		}
+	  ],
+	  "estadoCivil": "Casado",
+	  "nacionalidade": "Brasileiro",
+	  "municipioNasc": "Rio de Janeiro",
+	  "ufNasc": "RJ",
+	  "corRaca": "Parda",
+	  "rg": "34.567.890-1",
+	  "dataExpedicao": "2005-06-15",
+	  "orgaoEmissor": "SSP",
+	  "ufEmissor": "RJ"
+	},
+	{
+	  "id": "3",
+	  "peso": 90,
+	  "altura": 1.80,
+	  "imc": 27,
+	  "socioeconomico": "B2",
+	  "escolaridade": "Superior Incompleto",
+	  "nome": "Pedro Oliveira",
+	  "sexo": "M",
+	  "idade": 40,
+	  "endereco": {
+		"logradouro": "Rua dos Pinheiros",
+		"numero": 789,
+		"bairro": "Pinheiros",
+		"municipio": "São Paulo",
+		"UF": "SP",
+		"CEP": "05422-000",
+		"complemento": "Apto 202"
+	  },
+	  "dataNasc": "1982-03-10",
+	  "cpf": "654.321.098-07",
+	  "telefone": "(11) 99999-9997",
+	  "contatos": [
+		{
+		  "nome": "Ana Oliveira",
+		  "telefone": "(11) 95555-5556",
+		  "parentesco": "Esposa"
+		},
+		{
+		  "nome": "Pedro Oliveira Jr.",
+		  "telefone": "(11) 94444-4446",
+		  "parentesco": "Filho"
+		}
+	  ],
+	  "estadoCivil": "Casado",
+	  "nacionalidade": "Brasileiro",
+	  "municipioNasc": "Curitiba",
+	  "ufNasc": "PR",
+	  "corRaca": "Branca",
+	  "rg": "56.789.012-3",
+	  "dataExpedicao": "2000-09-20",
+	  "orgaoEmissor": "SSP",
+	  "ufEmissor": "PR"
+	},
+	{
+	  "id": "4",
+	  "peso": 60,
+	  "altura": 1.55,
+	  "imc": 25,
+	  "socioeconomico": "D",
+	  "escolaridade": "Fundamental Incompleto",
+	  "nome": "Luana Souza",
+	  "sexo": "F",
+	  "idade": 25,
+	  "endereco": {
+		"logradouro": "Rua do Sol",
+		"numero": 901,
+		"bairro": "Centro",
+		"municipio": "Fortaleza",
+		"UF": "CE",
+		"CEP": "60010-000",
+		"complemento": "Casa 1"
+	  },
+	  "dataNasc": "1997-05-15",
+	  "cpf": "321.098.765-43",
+	  "telefone": "(85) 99999-9995",
+	  "contatos": [
+		{
+		  "nome": "João Souza",
+		  "telefone": "(85) 95555-5558",
+		  "parentesco": "Pai"
+		},
+		{
+		  "nome": "Maria Souza",
+		  "telefone": "(85) 94444-4447",
+		  "parentesco": "Mãe"
+		}
+	  ],
+	  "estadoCivil": "Solteiro",
+	  "nacionalidade": "Brasileiro",
+	  "municipioNasc": "Fortaleza",
+	  "ufNasc": "CE",
+	  "corRaca": "Preta",
+	  "rg": "78.901.234-5",
+	  "dataExpedicao": "2015-03-10",
+	  "orgaoEmissor": "SSP",
+	  "ufEmissor": "CE"
+	},
+	{
+	  "id": "5",
+	  "peso": 85,
+	  "altura": 1.75,
+	  "imc": 28,
+	  "socioeconomico": "C2",
+	  "escolaridade": "Médio Incompleto",
+	  "nome": "Carlos Santos",
+	  "sexo": "M",
+	  "idade": 45,
+	  "endereco": {
+		"logradouro": "Avenida Atlântica",
+		"numero": 111,
+		"bairro": "Copacabana",
+		"municipio": "Rio de Janeiro",
+		"UF": "RJ",
+		"CEP": "22070-000",
+		"complemento": "Apto 303"
+	  },
+	  "dataNasc": "1977-09-20",
+	  "cpf": "987.654.321-01",
+	  "telefone": "(21) 99999-9996",
+	  "contatos": [
+		{
+		  "nome": "Maria Santos",
+		  "telefone": "(21) 95555-5559",
+		  "parentesco": "Esposa"
+		},
+		{
+		  "nome": "Carlos Santos Jr.",
+		  "telefone": "(21) 94444-4448",
+		  "parentesco": "Filho"
+		}
+	  ],
+	  "estadoCivil": "Casado",
+	  "nacionalidade": "Brasileiro",
+	  "municipioNasc": "Belo Horizonte",
+	  "ufNasc": "MG",
+	  "corRaca": "Parda",
+	  "rg": "90.123.456-7",
+	  "dataExpedicao": "1995-06-15",
+	  "orgaoEmissor": "SSP",
+	  "ufEmissor": "MG"
+	},
+	{
+	  "id": "6",
+	  "peso": 75,
+	  "altura": 1.60,
+	  "imc": 29,
+	  "socioeconomico": "B1",
+	  "escolaridade": "Superior Completo",
+	  "nome": "Ana Paula",
+	  "sexo": "F",
+	  "idade": 30,
+	  "endereco": {
+		"logradouro": "Rua dos Bandeirantes",
+		"numero": 456,
+		"bairro": "Santo Amaro",
+		"municipio": "São Paulo",
+		"UF": "SP",
+		"CEP": "04710-000",
+		"complemento": "Casa 3"
+	  },
+	  "dataNasc": "1992-02-20",
+	  "cpf": "654.321.098-08",
+	  "telefone": "(11) 99999-9994",
+	  "contatos": [
+		{
+		  "nome": "Pedro Paulo",
+		  "telefone": "(11) 95555-5554",
+		  "parentesco": "Marido"
+		},
+		{
+		  "nome": "Ana Beatriz",
+		  "telefone": "(11) 94444-4443",
+		  "parentesco": "Filha"
+		}
+	  ],
+	  "estadoCivil": "Casado",
+	  "nacionalidade": "Brasileiro",
+	  "municipioNasc": "Curitiba",
+	  "ufNasc": "PR",
+	  "corRaca": "Branca",
+	  "rg": "67.890.123-4",
+	  "dataExpedicao": "2010-09-20",
+	  "orgaoEmissor": "SSP",
+	  "ufEmissor": "PR"
+	}
+  ],
+  "avaliacoes": [
+    {
+      "id": "3aa5",
+      "formulario": {
+        "id": 1,
+        "tipo": "sedentarismo",
+        "titulo": "Nível de Atividade Física e Comportamento Sedentário",
+        "descricao": "Nível de Atividade Física e Comportamento Sedentário",
+        "etapas": [
+          {
+            "titulo": "Atividade Moderada",
+            "descricao": "Você consegue realizá-la conversando com dificuldade enquanto se movimenta e não vai conseguir cantar.",
+            "perguntas": [
+              {
+                "texto": "Quanto tempo por dia você realiza atividades moderadas? (HH:MM)",
+                "tipo": "tempo",
+                "resposta": "01:30",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Quantos dias por semana?",
+                "tipo": "numero",
+                "resposta": 2,
+                "validacao": {
+                  "required": true,
+                  "min": 0,
+                  "max": 7
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividade Vigorosa",
+            "descricao": "Você não vai conseguir nem conversar. A sua respiração vai ser muito mais rápida que o normal e os batimentos do seu coração vão aumentar muito.",
+            "perguntas": [
+              {
+                "texto": "Quanto tempo por dia você realiza atividades vigorosas? (HH:MM)",
+                "tipo": "tempo",
+                "resposta": "02:00",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Quantos dias por semana?",
+                "tipo": "numero",
+                "resposta": 2,
+                "validacao": {
+                  "required": true,
+                  "min": 0,
+                  "max": 7
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comportamento Sedentário",
+            "descricao": "Quanto tempo do seu dia, enquanto você está acordado, você gasta sentado, reclinado ou deitado, assistindo televisão, no celular, em frente ao computador, realizando trabalhos manuais, dirigindo ou lendo?",
+            "perguntas": [
+              {
+                "texto": "Quanto tempo por dia? (HH:MM)",
+                "tipo": "tempo",
+                "resposta": "08:00",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Quantos dias por semana?",
+                "tipo": "numero",
+                "resposta": 7,
+                "validacao": {
+                  "required": true,
+                  "min": 0,
+                  "max": 7
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "dataCriacao": "2024-11-15T21:40:58.892Z",
+      "dataAtualizacao": "2024-11-15T21:40:58.892Z"
+    },
+    {
+      "id": "998e",
+      "preenchidoPor": {
+        "id": 1,
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "1",
+        "peso": 70.5,
+        "altura": 1.75,
+        "imc": 23,
+        "socioeconomico": "B2",
+        "escolaridade": "Superior Completo",
+        "nome": "Maria Santos",
+        "sexo": "F",
+        "idade": 45,
+        "endereco": {
+          "logradouro": "Avenida Secundária",
+          "numero": 456,
+          "bairro": "Jardim",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "02002-000"
+        },
+        "dataNasc": "1978-08-20",
+        "cpf": "98765432101",
+        "telefone": "11988888888",
+        "contatos": [
+          {
+            "nome": "José Santos",
+            "telefone": "11977777777",
+            "parentesco": "FILHO"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 3,
+        "tipo": "ivcf20",
+        "titulo": "Índice de Vulnerabilidade Clínico-Funcional (IVCF-20)",
+        "descricao": "Avaliação multidimensional do grau de vulnerabilidade clínica e funcional de idosos",
+        "etapas": [
+          {
+            "titulo": "Auto-percepção da Saúde",
+            "descricao": "Avaliação geral da saúde comparada a outras pessoas da mesma idade.",
+            "perguntas": [
+              {
+                "texto": "Em geral, comparado com outras pessoas da sua idade, como você diria que está a sua saúde?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Excelente, boa ou muito boa",
+                  "Regular ou ruim"
+                ],
+                "resposta": "Regular ou ruim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Percepção da saúde comparada",
+            "descricao": "Avaliação geral da saúde comparada historicamente.",
+            "perguntas": [
+              {
+                "texto": "Comparada há um ano atrás, como você se classificaria sua saúde em geral, agora?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Melhor",
+                  "Pior",
+                  "Igual"
+                ],
+                "resposta": "Igual",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividades de Vida Diária",
+            "descricao": "Avaliação de atividades como compras, finanças, e pequenos trabalhos domésticos.",
+            "perguntas": [
+              {
+                "texto": "Você deixou de fazer compras por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz compras por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não faz compras por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de controlar seu dinheiro ou os gastos da casa por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não controla o dinheiro por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não controla o dinheiro por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de realizar pequenos trabalhos domésticos (limpeza leve, arrumar a casa, lavar louças) por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz trabalhos domésticos por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não faz trabalhos domésticos por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de tomar banho sozinho por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cognição",
+            "descricao": "Avaliação de possíveis sinais de problemas de memória.",
+            "perguntas": [
+              {
+                "texto": "Algum familiar ou amigo falou que você está ficando esquecido?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está piorando nos últimos meses?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está impedindo a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Humor",
+            "descricao": "Avaliação de sintomas relacionados ao humor.",
+            "perguntas": [
+              {
+                "texto": "No último mês, você ficou com desânimo, tristeza ou desesperança?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "No último mês, você perdeu o interesse ou prazer em atividades anteriormente prazerosas?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Mobilidade",
+            "descricao": "Avaliação de mobilidade e capacidade física.",
+            "perguntas": [
+              {
+                "texto": "Você é incapaz de elevar os braços acima do nível do ombro?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você é incapaz de segurar pequenos objetos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das quatro condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Perda de peso não intencional de 4,5 kg ou 5% do peso corporal no último ano ou 6 kg nos últimos 6 meses ou 3 kg no último mês",
+                  "Índice de Massa Corporal (IMC) menor que 22 kg/m²",
+                  "Circunferência da panturrilha < 31 cm",
+                  "Tempo gasto no teste de velocidade de marcha (4m) > 5 segundos"
+                ],
+                "resposta": [
+                  "Circunferência da panturrilha < 31 cm"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem dificuldade para caminhar capaz de impedir a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você caiu no último ano? Quantas vezes?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Não",
+                  "1 vez",
+                  "2 vezes",
+                  "3 vezes ou mais"
+                ],
+                "resposta": "2 vezes",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você perde urina ou fezes, sem querer, em algum momento?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comunicação",
+            "descricao": "Avaliação de problemas de comunicação relacionados à saúde.",
+            "perguntas": [
+              {
+                "texto": "Você tem problemas de visão capazes de impedir a realização de alguma atividade do cotidiano? É permitido o uso de óculos ou lentes de contato.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem problemas de audição que impedem a realização de atividades do cotidiano? É permitido o uso de aparelhos de audição.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das três condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Cinco ou mais doenças crônicas",
+                  "Uso regular de cinco ou mais medicamentos diferentes",
+                  "Internação recente, nos últimos 6 meses"
+                ],
+                "resposta": [
+                  "Cinco ou mais doenças crônicas",
+                  "Uso regular de cinco ou mais medicamentos diferentes"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "dataCriacao": "2024-11-15T22:56:53.472Z",
+      "dataAtualizacao": "2024-11-15T22:56:53.472Z"
+    },
+    {
+      "id": "a0bc",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "2",
+        "peso": 80,
+        "altura": 1.8,
+        "imc": 25,
+        "socioeconomico": "B1",
+        "escolaridade": "Médio Completo",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 50,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "Rio de Janeiro",
+          "UF": "RJ",
+          "cep": "20001-000"
+        },
+        "dataNasc": "1972-02-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "contatos": [
+          {
+            "nome": "Pedro Silva",
+            "telefone": "11955555555",
+            "parentesco": "FILHO"
+          },
+          {
+            "nome": "Ana Silva",
+            "telefone": "11944444444",
+            "parentesco": "FILHA"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 3,
+        "tipo": "ivcf20",
+        "titulo": "Índice de Vulnerabilidade Clínico-Funcional (IVCF-20)",
+        "descricao": "Avaliação multidimensional do grau de vulnerabilidade clínica e funcional de idosos",
+        "etapas": [
+          {
+            "titulo": "Auto-percepção da Saúde",
+            "descricao": "Avaliação geral da saúde comparada a outras pessoas da mesma idade.",
+            "perguntas": [
+              {
+                "texto": "Em geral, comparado com outras pessoas da sua idade, como você diria que está a sua saúde?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Excelente, boa ou muito boa",
+                  "Regular ou ruim"
+                ],
+                "resposta": "Excelente, boa ou muito boa",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Percepção da saúde comparada",
+            "descricao": "Avaliação geral da saúde comparada historicamente.",
+            "perguntas": [
+              {
+                "texto": "Comparada há um ano atrás, como você se classificaria sua saúde em geral, agora?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Melhor",
+                  "Pior",
+                  "Igual"
+                ],
+                "resposta": "Melhor",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividades de Vida Diária",
+            "descricao": "Avaliação de atividades como compras, finanças, e pequenos trabalhos domésticos.",
+            "perguntas": [
+              {
+                "texto": "Você deixou de fazer compras por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz compras por outros motivos que não a saúde"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de controlar seu dinheiro ou os gastos da casa por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não controla o dinheiro por outros motivos que não a saúde"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de realizar pequenos trabalhos domésticos (limpeza leve, arrumar a casa, lavar louças) por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz trabalhos domésticos por outros motivos que não a saúde"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de tomar banho sozinho por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cognição",
+            "descricao": "Avaliação de possíveis sinais de problemas de memória.",
+            "perguntas": [
+              {
+                "texto": "Algum familiar ou amigo falou que você está ficando esquecido?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está piorando nos últimos meses?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está impedindo a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Humor",
+            "descricao": "Avaliação de sintomas relacionados ao humor.",
+            "perguntas": [
+              {
+                "texto": "No último mês, você ficou com desânimo, tristeza ou desesperança?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "No último mês, você perdeu o interesse ou prazer em atividades anteriormente prazerosas?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Mobilidade",
+            "descricao": "Avaliação de mobilidade e capacidade física.",
+            "perguntas": [
+              {
+                "texto": "Você é incapaz de elevar os braços acima do nível do ombro?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você é incapaz de segurar pequenos objetos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das quatro condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Perda de peso não intencional de 4,5 kg ou 5% do peso corporal no último ano ou 6 kg nos últimos 6 meses ou 3 kg no último mês",
+                  "Índice de Massa Corporal (IMC) menor que 22 kg/m²",
+                  "Circunferência da panturrilha < 31 cm",
+                  "Tempo gasto no teste de velocidade de marcha (4m) > 5 segundos"
+                ],
+                "resposta": [
+                  "Perda de peso não intencional de 4,5 kg ou 5% do peso corporal no último ano ou 6 kg nos últimos 6 meses ou 3 kg no último mês"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem dificuldade para caminhar capaz de impedir a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você caiu no último ano? Quantas vezes?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Não",
+                  "1 vez",
+                  "2 vezes",
+                  "3 vezes ou mais"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você perde urina ou fezes, sem querer, em algum momento?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comunicação",
+            "descricao": "Avaliação de problemas de comunicação relacionados à saúde.",
+            "perguntas": [
+              {
+                "texto": "Você tem problemas de visão capazes de impedir a realização de alguma atividade do cotidiano? É permitido o uso de óculos ou lentes de contato.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem problemas de audição que impedem a realização de atividades do cotidiano? É permitido o uso de aparelhos de audição.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das três condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Cinco ou mais doenças crônicas",
+                  "Uso regular de cinco ou mais medicamentos diferentes",
+                  "Internação recente, nos últimos 6 meses"
+                ],
+                "resposta": [
+                  "Cinco ou mais doenças crônicas"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "dataCriacao": "2024-11-16T00:41:53.612Z",
+      "dataAtualizacao": "2024-11-16T00:41:53.612Z"
+    },
+    {
+      "id": "6ba9",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "1",
+        "peso": 70.5,
+        "altura": 1.75,
+        "imc": 23,
+        "socioeconomico": "B2",
+        "escolaridade": "Superior Completo",
+        "nome": "Maria Santos",
+        "sexo": "F",
+        "idade": 45,
+        "endereco": {
+          "logradouro": "Avenida Secundária",
+          "numero": 456,
+          "bairro": "Jardim",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "02002-000"
+        },
+        "dataNasc": "1978-08-20",
+        "cpf": "98765432101",
+        "telefone": "11988888888",
+        "contatos": [
+          {
+            "nome": "José Santos",
+            "telefone": "11977777777",
+            "parentesco": "FILHO"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 3,
+        "tipo": "ivcf20",
+        "titulo": "Índice de Vulnerabilidade Clínico-Funcional (IVCF-20)",
+        "descricao": "Avaliação multidimensional do grau de vulnerabilidade clínica e funcional de idosos",
+        "etapas": [
+          {
+            "titulo": "Auto-percepção da Saúde",
+            "descricao": "Avaliação geral da saúde comparada a outras pessoas da mesma idade.",
+            "perguntas": [
+              {
+                "texto": "Em geral, comparado com outras pessoas da sua idade, como você diria que está a sua saúde?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Excelente, boa ou muito boa",
+                  "Regular ou ruim"
+                ],
+                "resposta": "Regular ou ruim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Percepção da saúde comparada",
+            "descricao": "Avaliação geral da saúde comparada historicamente.",
+            "perguntas": [
+              {
+                "texto": "Comparada há um ano atrás, como você se classificaria sua saúde em geral, agora?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Melhor",
+                  "Pior",
+                  "Igual"
+                ],
+                "resposta": "Igual",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividades de Vida Diária",
+            "descricao": "Avaliação de atividades como compras, finanças, e pequenos trabalhos domésticos.",
+            "perguntas": [
+              {
+                "texto": "Você deixou de fazer compras por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz compras por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não faz compras por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de controlar seu dinheiro ou os gastos da casa por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não controla o dinheiro por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não controla o dinheiro por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de realizar pequenos trabalhos domésticos (limpeza leve, arrumar a casa, lavar louças) por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz trabalhos domésticos por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não faz trabalhos domésticos por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de tomar banho sozinho por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cognição",
+            "descricao": "Avaliação de possíveis sinais de problemas de memória.",
+            "perguntas": [
+              {
+                "texto": "Algum familiar ou amigo falou que você está ficando esquecido?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está piorando nos últimos meses?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está impedindo a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Humor",
+            "descricao": "Avaliação de sintomas relacionados ao humor.",
+            "perguntas": [
+              {
+                "texto": "No último mês, você ficou com desânimo, tristeza ou desesperança?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "No último mês, você perdeu o interesse ou prazer em atividades anteriormente prazerosas?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Mobilidade",
+            "descricao": "Avaliação de mobilidade e capacidade física.",
+            "perguntas": [
+              {
+                "texto": "Você é incapaz de elevar os braços acima do nível do ombro?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você é incapaz de segurar pequenos objetos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das quatro condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Perda de peso não intencional de 4,5 kg ou 5% do peso corporal no último ano ou 6 kg nos últimos 6 meses ou 3 kg no último mês",
+                  "Índice de Massa Corporal (IMC) menor que 22 kg/m²",
+                  "Circunferência da panturrilha < 31 cm",
+                  "Tempo gasto no teste de velocidade de marcha (4m) > 5 segundos"
+                ],
+                "resposta": [
+                  "Tempo gasto no teste de velocidade de marcha (4m) > 5 segundos"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem dificuldade para caminhar capaz de impedir a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você caiu no último ano? Quantas vezes?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Não",
+                  "1 vez",
+                  "2 vezes",
+                  "3 vezes ou mais"
+                ],
+                "resposta": "3 vezes ou mais",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você perde urina ou fezes, sem querer, em algum momento?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comunicação",
+            "descricao": "Avaliação de problemas de comunicação relacionados à saúde.",
+            "perguntas": [
+              {
+                "texto": "Você tem problemas de visão capazes de impedir a realização de alguma atividade do cotidiano? É permitido o uso de óculos ou lentes de contato.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem problemas de audição que impedem a realização de atividades do cotidiano? É permitido o uso de aparelhos de audição.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das três condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Cinco ou mais doenças crônicas",
+                  "Uso regular de cinco ou mais medicamentos diferentes",
+                  "Internação recente, nos últimos 6 meses"
+                ],
+                "resposta": [
+                  "Internação recente, nos últimos 6 meses"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "pontuacaoMaxima": 0,
+      "dataCriacao": "2024-11-16T19:27:24.576Z",
+      "dataAtualizacao": "2024-11-16T19:27:24.576Z"
+    },
+    {
+      "id": "cb11",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "1",
+        "peso": 70.5,
+        "altura": 1.75,
+        "imc": 23,
+        "socioeconomico": "B2",
+        "escolaridade": "Superior Completo",
+        "nome": "Maria Santos",
+        "sexo": "F",
+        "idade": 45,
+        "endereco": {
+          "logradouro": "Avenida Secundária",
+          "numero": 456,
+          "bairro": "Jardim",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "02002-000"
+        },
+        "dataNasc": "1978-08-20",
+        "cpf": "98765432101",
+        "telefone": "11988888888",
+        "contatos": [
+          {
+            "nome": "José Santos",
+            "telefone": "11977777777",
+            "parentesco": "FILHO"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 3,
+        "tipo": "ivcf20",
+        "titulo": "Índice de Vulnerabilidade Clínico-Funcional (IVCF-20)",
+        "descricao": "Avaliação multidimensional do grau de vulnerabilidade clínica e funcional de idosos",
+        "etapas": [
+          {
+            "titulo": "Auto-percepção da Saúde",
+            "descricao": "Avaliação geral da saúde comparada a outras pessoas da mesma idade.",
+            "perguntas": [
+              {
+                "texto": "Em geral, comparado com outras pessoas da sua idade, como você diria que está a sua saúde?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Excelente, boa ou muito boa",
+                  "Regular ou ruim"
+                ],
+                "resposta": "Regular ou ruim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Percepção da saúde comparada",
+            "descricao": "Avaliação geral da saúde comparada historicamente.",
+            "perguntas": [
+              {
+                "texto": "Comparada há um ano atrás, como você se classificaria sua saúde em geral, agora?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Melhor",
+                  "Pior",
+                  "Igual"
+                ],
+                "resposta": "Igual",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividades de Vida Diária",
+            "descricao": "Avaliação de atividades como compras, finanças, e pequenos trabalhos domésticos.",
+            "perguntas": [
+              {
+                "texto": "Você deixou de fazer compras por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz compras por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não faz compras por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de controlar seu dinheiro ou os gastos da casa por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não controla o dinheiro por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não controla o dinheiro por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de realizar pequenos trabalhos domésticos (limpeza leve, arrumar a casa, lavar louças) por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz trabalhos domésticos por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não faz trabalhos domésticos por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de tomar banho sozinho por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cognição",
+            "descricao": "Avaliação de possíveis sinais de problemas de memória.",
+            "perguntas": [
+              {
+                "texto": "Algum familiar ou amigo falou que você está ficando esquecido?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está piorando nos últimos meses?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está impedindo a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Humor",
+            "descricao": "Avaliação de sintomas relacionados ao humor.",
+            "perguntas": [
+              {
+                "texto": "No último mês, você ficou com desânimo, tristeza ou desesperança?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "No último mês, você perdeu o interesse ou prazer em atividades anteriormente prazerosas?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Mobilidade",
+            "descricao": "Avaliação de mobilidade e capacidade física.",
+            "perguntas": [
+              {
+                "texto": "Você é incapaz de elevar os braços acima do nível do ombro?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você é incapaz de segurar pequenos objetos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Sim",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das quatro condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Perda de peso não intencional de 4,5 kg ou 5% do peso corporal no último ano ou 6 kg nos últimos 6 meses ou 3 kg no último mês",
+                  "Índice de Massa Corporal (IMC) menor que 22 kg/m²",
+                  "Circunferência da panturrilha < 31 cm",
+                  "Tempo gasto no teste de velocidade de marcha (4m) > 5 segundos"
+                ],
+                "resposta": [
+                  "Tempo gasto no teste de velocidade de marcha (4m) > 5 segundos"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem dificuldade para caminhar capaz de impedir a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você caiu no último ano? Quantas vezes?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Não",
+                  "1 vez",
+                  "2 vezes",
+                  "3 vezes ou mais"
+                ],
+                "resposta": "3 vezes ou mais",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você perde urina ou fezes, sem querer, em algum momento?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comunicação",
+            "descricao": "Avaliação de problemas de comunicação relacionados à saúde.",
+            "perguntas": [
+              {
+                "texto": "Você tem problemas de visão capazes de impedir a realização de alguma atividade do cotidiano? É permitido o uso de óculos ou lentes de contato.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem problemas de audição que impedem a realização de atividades do cotidiano? É permitido o uso de aparelhos de audição.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das três condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Cinco ou mais doenças crônicas",
+                  "Uso regular de cinco ou mais medicamentos diferentes",
+                  "Internação recente, nos últimos 6 meses"
+                ],
+                "resposta": [
+                  "Internação recente, nos últimos 6 meses"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "pontuacaoMaxima": 0,
+      "dataCriacao": "2024-11-16T19:39:50.284Z",
+      "dataAtualizacao": "2024-11-16T19:39:50.284Z"
+    },
+    {
+      "id": "1098",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "1",
+        "peso": 70.5,
+        "altura": 1.75,
+        "imc": 23,
+        "socioeconomico": "B2",
+        "escolaridade": "Superior Completo",
+        "nome": "Maria Santos",
+        "sexo": "F",
+        "idade": 45,
+        "endereco": {
+          "logradouro": "Avenida Secundária",
+          "numero": 456,
+          "bairro": "Jardim",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "02002-000"
+        },
+        "dataNasc": "1978-08-20",
+        "cpf": "98765432101",
+        "telefone": "11988888888",
+        "contatos": [
+          {
+            "nome": "José Santos",
+            "telefone": "11977777777",
+            "parentesco": "FILHO"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 4,
+        "tipo": "minimental",
+        "titulo": "Mini Exame do Estado Mental (MEEM)",
+        "descricao": "Avaliação cognitiva para identificar possíveis déficits cognitivos.",
+        "etapas": [
+          {
+            "titulo": "Orientação Temporal",
+            "descricao": "Pergunte ao paciente as seguintes questões, será calculado 1 ponto para cada.",
+            "perguntas": [
+              {
+                "texto": "Que dia é hoje?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que mês estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que ano estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que dia da semana estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Qual a hora atual aproximada (considere variação de mais ou menos 1 hora)",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Orientação Espacial",
+            "descricao": "Pergunte ao paciente as seguintes questões, será calculado 1 ponto para cada.",
+            "perguntas": [
+              {
+                "texto": "Em que local nós estamos? (consultório, sala, dormitório...)",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Que local é este aqui? (apontando ao redor num sentido mais amplo.... hospital, casa de repouso, própria casa...)",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que bairro nós estamos ou qual o nome de uma rua próxima?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que cidade nós estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que estado nós estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Memória Imediata",
+            "descricao": "Eu vou dizer 3 palavras e você irá repeti-las a seguir: CARRO – VASO – TIJOLO. Pode repeti-las até três vezes para o aprendizado, se houver erros.",
+            "perguntas": [
+              {
+                "texto": "Marque cada palavra repetida corretamente na 1ª vez.",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "CARRO",
+                  "VASO",
+                  "TIJOLO"
+                ],
+                "resposta": [
+                  "CARRO",
+                  "VASO",
+                  "TIJOLO"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cálculo",
+            "descricao": "Subtração de 7 seriadamente (100-7; 93-7; 86-7; 79-7; 72-7; 65). Se houver erro, corrija-o e prossiga. Considere correto se o avaliado espontaneamente se autocorrigir.",
+            "perguntas": [
+              {
+                "texto": "Considere 1 ponto para cada resultado correto.",
+                "tipo": "range",
+                "resposta": 4,
+                "validacao": {
+                  "required": true,
+                  "min": 0,
+                  "max": 6
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Evocação das palavras",
+            "descricao": "Pergunte quais as palavras que o indivíduo acabara de repetir (CARRO-VASO-TIJOLO).",
+            "perguntas": [
+              {
+                "texto": "Marque cada palavra repetida corretamente.",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "CARRO",
+                  "VASO",
+                  "TIJOLO"
+                ],
+                "resposta": [
+                  "CARRO",
+                  "VASO",
+                  "TIJOLO"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Nomeação",
+            "descricao": "Peça para o indivíduo nomear os objetos mostrados (relógio, caneta). ",
+            "perguntas": [
+              {
+                "texto": "Marque cada objeto nomeado corretamente.",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Relógio",
+                  "Caneta"
+                ],
+                "resposta": [
+                  "Relógio",
+                  "Caneta"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Repetição",
+            "descricao": "Preste atenção: Vou lhe dizer uma frase e quero que você repita depois de mim: “NEM AQUI, NEM ALI, NEM LÁ”.",
+            "perguntas": [
+              {
+                "texto": "Considere somente se a repetição for perfeita",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comando",
+            "descricao": "Pegue este papel com a mão direita (1 ponto), dobre-o ao meio (1 ponto) e coloque-o no chão (1 ponto).  Se o indivíduo pedir ajuda no meio da tarefa não dê dicas.",
+            "perguntas": [
+              {
+                "texto": "Avalie cada critério.",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Pegou o papel com a mão direita.",
+                  "Dobrou o papel ao meio.",
+                  "Colocou o papel no chão."
+                ],
+                "resposta": [
+                  "Pegou o papel com a mão direita.",
+                  "Dobrou o papel ao meio."
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Leitura e Obediência",
+            "descricao": "Mostre a frase escrita: “FECHE OS OLHOS” e peça para o indivíduo fazer o que está sendo mandado. Não auxilie se pedir ajuda ou se só ler a frase sem realizar o comando. ",
+            "perguntas": [
+              {
+                "texto": "Avalie o resultado.",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Escrita",
+            "descricao": "Peça ao indivíduo para escrever uma frase. Se não compreender o significado, ajude com: alguma frase que tenha começo, meio e fim, alguma coisa que aconteceu hoje; alguma coisa que queira dizer. Para a correção não são considerados erros gramaticais ou de ortografia. (1 ponto).",
+            "perguntas": [
+              {
+                "texto": "Avalie o resultado.",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cópia do Desenho",
+            "descricao": "Mostre o modelo e peça para fazer o melhor possível. Considere apenas se houver 2 pentágonos intersecionados (10 ângulos) formando uma figura de quatro lados ou com dois ângulos (1 ponto).",
+            "perguntas": [
+              {
+                "texto": "Avalie o desenho.",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "pontuacaoMaxima": 0,
+      "dataCriacao": "2024-11-16T20:18:05.667Z",
+      "dataAtualizacao": "2024-11-16T20:18:05.667Z"
+    },
+    {
+      "id": "6ff4",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "1",
+        "peso": 70.5,
+        "altura": 1.75,
+        "imc": 23,
+        "socioeconomico": "B2",
+        "escolaridade": "Superior Completo",
+        "nome": "Maria Santos",
+        "sexo": "F",
+        "idade": 45,
+        "endereco": {
+          "logradouro": "Avenida Secundária",
+          "numero": 456,
+          "bairro": "Jardim",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "02002-000"
+        },
+        "dataNasc": "1978-08-20",
+        "cpf": "98765432101",
+        "telefone": "11988888888",
+        "contatos": [
+          {
+            "nome": "José Santos",
+            "telefone": "11977777777",
+            "parentesco": "FILHO"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 1,
+        "tipo": "sedentarismo",
+        "titulo": "Nível de Atividade Física e Comportamento Sedentário",
+        "descricao": "Nível de Atividade Física e Comportamento Sedentário",
+        "etapas": [
+          {
+            "titulo": "Atividade Moderada",
+            "descricao": "Você consegue realizá-la conversando com dificuldade enquanto se movimenta e não vai conseguir cantar.",
+            "perguntas": [
+              {
+                "texto": "Quanto tempo por dia você realiza atividades moderadas? (HH:MM)",
+                "tipo": "tempo",
+                "resposta": "01:01",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Quantos dias por semana?",
+                "tipo": "numero",
+                "resposta": 7,
+                "validacao": {
+                  "required": true,
+                  "min": 0,
+                  "max": 7
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividade Vigorosa",
+            "descricao": "Você não vai conseguir nem conversar. A sua respiração vai ser muito mais rápida que o normal e os batimentos do seu coração vão aumentar muito.",
+            "perguntas": [
+              {
+                "texto": "Quanto tempo por dia você realiza atividades vigorosas? (HH:MM)",
+                "tipo": "tempo",
+                "resposta": "01:00",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Quantos dias por semana?",
+                "tipo": "numero",
+                "resposta": 1,
+                "validacao": {
+                  "required": true,
+                  "min": 0,
+                  "max": 7
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comportamento Sedentário",
+            "descricao": "Quanto tempo do seu dia, enquanto você está acordado, você gasta sentado, reclinado ou deitado, assistindo televisão, no celular, em frente ao computador, realizando trabalhos manuais, dirigindo ou lendo?",
+            "perguntas": [
+              {
+                "texto": "Quanto tempo por dia? (HH:MM)",
+                "tipo": "tempo",
+                "resposta": "08:00",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Quantos dias por semana?",
+                "tipo": "numero",
+                "resposta": 7,
+                "validacao": {
+                  "required": true,
+                  "min": 0,
+                  "max": 7
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "pontuacaoMaxima": 0,
+      "dataCriacao": "2024-11-16T20:20:44.365Z",
+      "dataAtualizacao": "2024-11-16T20:20:44.365Z"
+    },
+    {
+      "id": "1922",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "1",
+        "peso": 70.5,
+        "altura": 1.75,
+        "imc": 23,
+        "socioeconomico": "B2",
+        "escolaridade": "Superior Completo",
+        "nome": "Maria Santos",
+        "sexo": "F",
+        "idade": 45,
+        "endereco": {
+          "logradouro": "Avenida Secundária",
+          "numero": 456,
+          "bairro": "Jardim",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "02002-000"
+        },
+        "dataNasc": "1978-08-20",
+        "cpf": "98765432101",
+        "telefone": "11988888888",
+        "contatos": [
+          {
+            "nome": "José Santos",
+            "telefone": "11977777777",
+            "parentesco": "FILHO"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 3,
+        "tipo": "ivcf20",
+        "titulo": "Índice de Vulnerabilidade Clínico-Funcional (IVCF-20)",
+        "descricao": "Avaliação multidimensional do grau de vulnerabilidade clínica e funcional de idosos",
+        "etapas": [
+          {
+            "titulo": "Auto-percepção da Saúde",
+            "descricao": "Avaliação geral da saúde comparada a outras pessoas da mesma idade.",
+            "perguntas": [
+              {
+                "texto": "Em geral, comparado com outras pessoas da sua idade, como você diria que está a sua saúde?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Excelente, boa ou muito boa",
+                  "Regular ou ruim"
+                ],
+                "resposta": "Regular ou ruim",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Percepção da saúde comparada",
+            "descricao": "Avaliação geral da saúde comparada historicamente.",
+            "perguntas": [
+              {
+                "texto": "Comparada há um ano atrás, como você se classificaria sua saúde em geral, agora?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Melhor",
+                  "Pior",
+                  "Igual"
+                ],
+                "resposta": "Igual",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividades de Vida Diária",
+            "descricao": "Avaliação de atividades como compras, finanças, e pequenos trabalhos domésticos.",
+            "perguntas": [
+              {
+                "texto": "Você deixou de fazer compras por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz compras por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não faz compras por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de controlar seu dinheiro ou os gastos da casa por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não controla o dinheiro por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não controla o dinheiro por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de realizar pequenos trabalhos domésticos (limpeza leve, arrumar a casa, lavar louças) por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não ou não faz trabalhos domésticos por outros motivos que não a saúde"
+                ],
+                "resposta": "Não ou não faz trabalhos domésticos por outros motivos que não a saúde",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você deixou de tomar banho sozinho por causa da sua saúde ou condição física?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cognição",
+            "descricao": "Avaliação de possíveis sinais de problemas de memória.",
+            "perguntas": [
+              {
+                "texto": "Algum familiar ou amigo falou que você está ficando esquecido?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está piorando nos últimos meses?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Este esquecimento está impedindo a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Humor",
+            "descricao": "Avaliação de sintomas relacionados ao humor.",
+            "perguntas": [
+              {
+                "texto": "No último mês, você ficou com desânimo, tristeza ou desesperança?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "No último mês, você perdeu o interesse ou prazer em atividades anteriormente prazerosas?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Mobilidade",
+            "descricao": "Avaliação de mobilidade e capacidade física.",
+            "perguntas": [
+              {
+                "texto": "Você é incapaz de elevar os braços acima do nível do ombro?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você é incapaz de segurar pequenos objetos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das quatro condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Perda de peso não intencional de 4,5 kg ou 5% do peso corporal no último ano ou 6 kg nos últimos 6 meses ou 3 kg no último mês",
+                  "Circunferência da panturrilha < 31 cm",
+                  "Tempo gasto no teste de velocidade de marcha (4m) > 5 segundos"
+                ],
+                "resposta": [
+                  "Perda de peso não intencional de 4,5 kg ou 5% do peso corporal no último ano ou 6 kg nos últimos 6 meses ou 3 kg no último mês"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem dificuldade para caminhar capaz de impedir a realização de alguma atividade do cotidiano?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você caiu no último ano? Quantas vezes?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Não",
+                  "1 vez",
+                  "2 vezes",
+                  "3 vezes ou mais"
+                ],
+                "resposta": "1 vez",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você perde urina ou fezes, sem querer, em algum momento?",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comunicação",
+            "descricao": "Avaliação de problemas de comunicação relacionados à saúde.",
+            "perguntas": [
+              {
+                "texto": "Você tem problemas de visão capazes de impedir a realização de alguma atividade do cotidiano? É permitido o uso de óculos ou lentes de contato.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem problemas de audição que impedem a realização de atividades do cotidiano? É permitido o uso de aparelhos de audição.",
+                "tipo": "radio",
+                "opcoes": [
+                  "Sim",
+                  "Não"
+                ],
+                "resposta": "Não",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Você tem alguma das três condições abaixo relacionadas?",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Cinco ou mais doenças crônicas",
+                  "Uso regular de cinco ou mais medicamentos diferentes",
+                  "Internação recente, nos últimos 6 meses"
+                ],
+                "resposta": [
+                  "Cinco ou mais doenças crônicas"
+                ],
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "pontuacaoMaxima": 0,
+      "dataCriacao": "2024-11-16T20:23:24.535Z",
+      "dataAtualizacao": "2024-11-16T20:23:24.535Z"
+    },
+    {
+      "id": "bab8",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "1",
+        "peso": 70.5,
+        "altura": 1.75,
+        "imc": 23,
+        "socioeconomico": "B2",
+        "escolaridade": "Superior Completo",
+        "nome": "Maria Santos",
+        "sexo": "F",
+        "idade": 45,
+        "endereco": {
+          "logradouro": "Avenida Secundária",
+          "numero": 456,
+          "bairro": "Jardim",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "02002-000"
+        },
+        "dataNasc": "1978-08-20",
+        "cpf": "98765432101",
+        "telefone": "11988888888",
+        "contatos": [
+          {
+            "nome": "José Santos",
+            "telefone": "11977777777",
+            "parentesco": "FILHO"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 2,
+        "tipo": "pfs",
+        "titulo": "Formulário PFS",
+        "descricao": "Avaliação do nível de fadiga física e mental após diferentes atividades",
+        "etapas": [
+          {
+            "titulo": "Escala de Fatigabilidade de Pittsburgh",
+            "descricao": "Instruções:  Nas perguntas a seguir indique o nível de fadiga física e mental (ou seja, cansaço, exaustão) que você espera ou imagina sentir imediatamente após completar cada uma das dez atividades listadas. Para cada atividade (a-j), circule as respostas para fadiga física e mental entre 0 e 5, onde “0” é igual a nenhuma fadiga e “5” é igual a fadiga extrema.",
+            "perguntas": []
+          },
+          {
+            "titulo": "Atividade 1",
+            "descricao": "Classifique os níveis de fadiga ao caminhar à lazer por 30 minutos.",
+            "perguntas": [
+              {
+                "texto": "Fadiga Física",
+                "tipo": "range",
+                "resposta": 5,
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                }
+              },
+              {
+                "texto": "Fadiga Mental",
+                "tipo": "range",
+                "resposta": 5,
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividade 2",
+            "descricao": "Classifique os níveis de fadiga: Atividade doméstica leve por 1 hora (limpar, cozinhar, tirar o pó, assar, arrumar camas, lavar louça, regar plantas)",
+            "perguntas": [
+              {
+                "texto": "Fadiga Física",
+                "tipo": "range",
+                "resposta": 0,
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                }
+              },
+              {
+                "texto": "Fadiga Mental",
+                "tipo": "range",
+                "resposta": 0,
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividade 3",
+            "descricao": "Classifique os níveis de fadiga: Participar de atividade social por 1 hora (festa, jantar, centro de idosos, reunião com família/amigos, jogar cartas)",
+            "perguntas": [
+              {
+                "texto": "Fadiga Física",
+                "tipo": "range",
+                "resposta": 5,
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                }
+              },
+              {
+                "texto": "Fadiga Mental",
+                "tipo": "range",
+                "resposta": 5,
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Atividade 4",
+            "descricao": "Classifique os níveis de fadiga: Atividade de alta intensidade por 30 minutos (corrida, caminhada, ciclismo, natação, esportes com raquete, aparelhos aeróbicos, dança, zumba)",
+            "perguntas": [
+              {
+                "texto": "Fadiga Física",
+                "tipo": "range",
+                "resposta": 5,
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                }
+              },
+              {
+                "texto": "Fadiga Mental",
+                "tipo": "range",
+                "resposta": 5,
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "pontuacaoMaxima": 0,
+      "dataCriacao": "2024-11-16T20:25:36.976Z",
+      "dataAtualizacao": "2024-11-16T20:25:36.976Z"
+    },
+    {
+      "id": "0d6c",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "1",
+        "peso": 70.5,
+        "altura": 1.75,
+        "imc": 23,
+        "socioeconomico": "B2",
+        "escolaridade": "Superior Completo",
+        "nome": "Maria Santos",
+        "sexo": "F",
+        "idade": 45,
+        "endereco": {
+          "logradouro": "Avenida Secundária",
+          "numero": 456,
+          "bairro": "Jardim",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "02002-000"
+        },
+        "dataNasc": "1978-08-20",
+        "cpf": "98765432101",
+        "telefone": "11988888888",
+        "contatos": [
+          {
+            "nome": "José Santos",
+            "telefone": "11977777777",
+            "parentesco": "FILHO"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 4,
+        "tipo": "minimental",
+        "titulo": "Mini Exame do Estado Mental (MEEM)",
+        "descricao": "Avaliação cognitiva para identificar possíveis déficits cognitivos.",
+        "etapas": [
+          {
+            "titulo": "Orientação Temporal",
+            "descricao": "Pergunte ao paciente as seguintes questões, será calculado 1 ponto para cada.",
+            "perguntas": [
+              {
+                "texto": "Que dia é hoje?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que mês estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que ano estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que dia da semana estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Qual a hora atual aproximada (considere variação de mais ou menos 1 hora)",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Orientação Espacial",
+            "descricao": "Pergunte ao paciente as seguintes questões, será calculado 1 ponto para cada.",
+            "perguntas": [
+              {
+                "texto": "Em que local nós estamos? (consultório, sala, dormitório...)",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Que local é este aqui? (apontando ao redor num sentido mais amplo.... hospital, casa de repouso, própria casa...)",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que bairro nós estamos ou qual o nome de uma rua próxima?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que cidade nós estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              },
+              {
+                "texto": "Em que estado nós estamos?",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Memória Imediata",
+            "descricao": "Eu vou dizer 3 palavras e você irá repeti-las a seguir: CARRO – VASO – TIJOLO. Pode repeti-las até três vezes para o aprendizado, se houver erros.",
+            "perguntas": [
+              {
+                "texto": "Marque cada palavra repetida corretamente na 1ª vez.",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "CARRO",
+                  "VASO",
+                  "TIJOLO"
+                ],
+                "resposta": [],
+                "validacao": {
+                  "required": false
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cálculo",
+            "descricao": "Subtração de 7 seriadamente (100-7; 93-7; 86-7; 79-7; 72-7; 65). Se houver erro, corrija-o e prossiga. Considere correto se o avaliado espontaneamente se autocorrigir.",
+            "perguntas": [
+              {
+                "texto": "Considere 1 ponto para cada resultado correto.",
+                "tipo": "range",
+                "resposta": 6,
+                "validacao": {
+                  "required": true,
+                  "min": 0,
+                  "max": 6
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Evocação das palavras",
+            "descricao": "Pergunte quais as palavras que o indivíduo acabara de repetir (CARRO-VASO-TIJOLO).",
+            "perguntas": [
+              {
+                "texto": "Marque cada palavra repetida corretamente.",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "CARRO",
+                  "VASO",
+                  "TIJOLO"
+                ],
+                "resposta": [],
+                "validacao": {
+                  "required": false
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Nomeação",
+            "descricao": "Peça para o indivíduo nomear os objetos mostrados (relógio, caneta). ",
+            "perguntas": [
+              {
+                "texto": "Marque cada objeto nomeado corretamente.",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Relógio",
+                  "Caneta"
+                ],
+                "resposta": [],
+                "validacao": {
+                  "required": false
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Repetição",
+            "descricao": "Preste atenção: Vou lhe dizer uma frase e quero que você repita depois de mim: “NEM AQUI, NEM ALI, NEM LÁ”.",
+            "perguntas": [
+              {
+                "texto": "Considere somente se a repetição for perfeita",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Comando",
+            "descricao": "Pegue este papel com a mão direita (1 ponto), dobre-o ao meio (1 ponto) e coloque-o no chão (1 ponto).  Se o indivíduo pedir ajuda no meio da tarefa não dê dicas.",
+            "perguntas": [
+              {
+                "texto": "Avalie cada critério.",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "Pegou o papel com a mão direita.",
+                  "Dobrou o papel ao meio.",
+                  "Colocou o papel no chão."
+                ],
+                "resposta": [],
+                "validacao": {
+                  "required": false
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Leitura e Obediência",
+            "descricao": "Mostre a frase escrita: “FECHE OS OLHOS” e peça para o indivíduo fazer o que está sendo mandado. Não auxilie se pedir ajuda ou se só ler a frase sem realizar o comando. ",
+            "perguntas": [
+              {
+                "texto": "Avalie o resultado.",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Escrita",
+            "descricao": "Peça ao indivíduo para escrever uma frase. Se não compreender o significado, ajude com: alguma frase que tenha começo, meio e fim, alguma coisa que aconteceu hoje; alguma coisa que queira dizer. Para a correção não são considerados erros gramaticais ou de ortografia. (1 ponto).",
+            "perguntas": [
+              {
+                "texto": "Avalie o resultado.",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "O paciente respondeu corretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          },
+          {
+            "titulo": "Cópia do Desenho",
+            "descricao": "Mostre o modelo e peça para fazer o melhor possível. Considere apenas se houver 2 pentágonos intersecionados (10 ângulos) formando uma figura de quatro lados ou com dois ângulos (1 ponto).",
+            "perguntas": [
+              {
+                "texto": "Avalie o desenho.",
+                "tipo": "radio",
+                "opcoes": [
+                  "O paciente respondeu corretamente",
+                  "Respondeu incorretamente"
+                ],
+                "resposta": "Respondeu incorretamente",
+                "validacao": {
+                  "required": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "pontuacaoMaxima": 0,
+      "dataCriacao": "2024-11-16T20:34:20.700Z",
+      "dataAtualizacao": "2024-11-16T20:34:20.700Z"
+    },
+    {
+      "id": "4aec",
+      "preenchidoPor": {
+        "id": "1",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 35,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "UF": "SP",
+          "cep": "01001-000"
+        },
+        "dataNasc": "1988-05-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "matricula": 12345,
+        "ativo": true
+      },
+      "referenteA": {
+        "id": "2",
+        "peso": 80,
+        "altura": 1.8,
+        "imc": 25,
+        "socioeconomico": "B1",
+        "escolaridade": "Médio Completo",
+        "nome": "João Silva",
+        "sexo": "M",
+        "idade": 50,
+        "endereco": {
+          "logradouro": "Rua Principal",
+          "numero": 123,
+          "bairro": "Centro",
+          "municipio": "Rio de Janeiro",
+          "UF": "RJ",
+          "cep": "20001-000"
+        },
+        "dataNasc": "1972-02-15",
+        "cpf": "12345678901",
+        "telefone": "11999999999",
+        "contatos": [
+          {
+            "nome": "Pedro Silva",
+            "telefone": "11955555555",
+            "parentesco": "FILHO"
+          },
+          {
+            "nome": "Ana Silva",
+            "telefone": "11944444444",
+            "parentesco": "FILHA"
+          }
+        ]
+      },
+      "formulario": {
+        "id": 1,
+        "tipo": "pfs",
+        "titulo": "Formulário PFS",
+        "descricao": "Avaliação do nível de fadiga física e mental após diferentes atividades",
+        "etapas": [
+          {
+            "id": 1,
+            "titulo": "Escala de Fatigabilidade de Pittsburgh",
+            "descricao": "Instruções: Nas perguntas a seguir indique o nível de fadiga física e mental (ou seja, cansaço, exaustão) que você espera ou imagina sentir imediatamente após completar cada uma das dez atividades listadas. Para cada atividade (a-j), circule as respostas para fadiga física e mental entre 0 e 5, onde '0' é igual a nenhuma fadiga e '5' é igual a fadiga extrema.",
+            "perguntas": []
+          },
+          {
+            "id": 2,
+            "titulo": "Atividade 1",
+            "descricao": "Classifique os níveis de fadiga ao caminhar à lazer por 30 minutos.",
+            "perguntas": [
+              {
+                "id": 1,
+                "texto": "Fadiga Física",
+                "tipo": "range",
+                "opcoes": [],
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                },
+                "resposta": 4
+              },
+              {
+                "id": 2,
+                "texto": "Fadiga Mental",
+                "tipo": "range",
+                "opcoes": [],
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                },
+                "resposta": 2
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "titulo": "Atividade 2",
+            "descricao": "Classifique os níveis de fadiga: Atividade doméstica leve por 1 hora (limpar, cozinhar, tirar o pó, assar, arrumar camas, lavar louça, regar plantas)",
+            "perguntas": [
+              {
+                "id": 3,
+                "texto": "Fadiga Física",
+                "tipo": "range",
+                "opcoes": [],
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                },
+                "resposta": 5
+              },
+              {
+                "id": 4,
+                "texto": "Fadiga Mental",
+                "tipo": "range",
+                "opcoes": [],
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                },
+                "resposta": 5
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "titulo": "Atividade 3",
+            "descricao": "Classifique os níveis de fadiga: Participar de atividade social por 1 hora (festa, jantar, centro de idosos, reunião com família/amigos, jogar cartas)",
+            "perguntas": [
+              {
+                "id": 5,
+                "texto": "Fadiga Física",
+                "tipo": "range",
+                "opcoes": [],
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                },
+                "resposta": 5
+              },
+              {
+                "id": 6,
+                "texto": "Fadiga Mental",
+                "tipo": "range",
+                "opcoes": [],
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                },
+                "resposta": 5
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "titulo": "Atividade 4",
+            "descricao": "Classifique os níveis de fadiga: Atividade de alta intensidade por 30 minutos (corrida, caminhada, ciclismo, natação, esportes com raquete, aparelhos aeróbicos, dança, zumba)",
+            "perguntas": [
+              {
+                "id": 7,
+                "texto": "Fadiga Física",
+                "tipo": "range",
+                "opcoes": [],
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                },
+                "resposta": 5
+              },
+              {
+                "id": 8,
+                "texto": "Fadiga Mental",
+                "tipo": "range",
+                "opcoes": [],
+                "validacao": {
+                  "min": 0,
+                  "max": 5,
+                  "required": true
+                },
+                "resposta": 5
+              }
+            ]
+          }
+        ]
+      },
+      "pontuacaoTotal": 0,
+      "pontuacaoMaxima": 0,
+      "dataCriacao": "2024-11-18T00:33:28.137Z",
+      "dataAtualizacao": "2024-11-18T00:33:28.137Z"
+    }
+  ]
+}

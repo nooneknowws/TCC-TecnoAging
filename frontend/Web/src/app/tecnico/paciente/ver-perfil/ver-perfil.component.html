@@ -1,0 +1,197 @@
+<header class="header">
+   <div class="container d-flex justify-content-between">
+     <h1 class="text-center">Visualizar Perfil do Paciente</h1>
+     <button class="btn btn-primary me-2" (click)="editarPaciente()">Editar</button>
+   </div>
+</header>
+
+<div class="my-4" *ngIf="paciente">
+   <div class="row">
+     <!-- Dados do Paciente -->
+     <div class="col-md-6">
+       <div class="card mb-4">
+         <div class="card-header">
+           <h4><i class="fas fa-user"></i> Dados do Paciente</h4>
+         </div>
+         <div class="card-body">
+           <table class="table table-bordered">
+             <tbody>
+               <tr>
+                 <th>Nome</th>
+                 <td>{{paciente.nome}}</td>
+               </tr>
+               <tr>
+                 <th>Data de Nascimento</th>
+                 <td>{{paciente.dataNasc | date:'dd/MM/yyyy'}}</td>
+               </tr>
+               <tr>
+                 <th>Sexo</th>
+                 <td>{{paciente.sexo}}</td>
+               </tr>
+               <tr>
+                 <th>Estado Civil</th>
+                 <td>{{paciente.estadoCivil}}</td>
+               </tr>
+               <tr>
+                 <th>Nacionalidade</th>
+                 <td>{{paciente.nacionalidade}}</td>
+               </tr>
+               <tr>
+                 <th>Município/UF de Nascimento</th>
+                 <td>{{paciente.municipioNasc}}/{{paciente.ufNasc}}</td>
+               </tr>
+               <tr>
+                 <th>Cor/Raça</th>
+                 <td>{{paciente.corRaca}}</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+
+     <!-- Documentação -->
+     <div class="col-md-6">
+       <div class="card mb-4">
+         <div class="card-header">
+           <h4><i class="fas fa-id-card"></i> Documentação</h4>
+         </div>
+         <div class="card-body row">
+           <div class="col-md-4">
+             <img [src]="paciente.fotoUrl || 'https://place-hold.it/192x256'" 
+                  class="img-fluid w-100" 
+                  alt="Foto do Paciente"
+                  (error)="onImageError($event)">
+           </div>
+           <div class="col-md-8">
+             <table class="table table-bordered">
+               <tbody>
+                 <tr>
+                   <th>RG</th>
+                   <td>{{paciente.rg}}</td>
+                 </tr>
+                 <tr>
+                   <th>CPF</th>
+                   <td>{{paciente.cpf}}</td>
+                 </tr>
+                 <tr>
+                   <th>Data de Expedição</th>
+                   <td>{{paciente.dataExpedicao | date:'dd/MM/yyyy'}}</td>
+                 </tr>
+                 <tr>
+                   <th>Órgão Emissor/UF</th>
+                   <td>{{paciente.orgaoEmissor}}/{{paciente.ufEmissor}}</td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- Formulários -->
+     <div class="col-md-12">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4><i class="fas fa-file-alt"></i> Formulários</h4>
+        </div>
+        <div class="card-body">
+          <table class="table table-bordered" *ngIf="avaliacoes.length > 0">
+            <thead>
+              <tr>
+                <th>Formulário</th>
+                <th>Resultado</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let avaliacao of avaliacoes">
+                <td>{{avaliacao.formulario!.titulo}}</td> 
+                <!-- TODO: COMPLETAR um objeto de Formulario no array de Avaliacao recebido do back -->
+                <!-- checar AvaliacaoService, alguns atributos são undefined -->
+                <td>{{avaliacao.pontuacaoTotal}}/{{avaliacao.pontuacaoMaxima || 'N/D'}}</td>
+                <td>
+                  <div class="btn-group">
+                    <button class="btn btn-sm btn-secondary" 
+                            (click)="consultarAvaliacao(avaliacao.id!)">
+                      <i class="fas fa-eye"></i> Consultar
+                    </button>
+                    <button class="btn btn-sm btn-primary" 
+                            (click)="editarAvaliacao(avaliacao.id!)">
+                      <i class="fas fa-edit"></i> Editar
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div *ngIf="avaliacoes.length === 0">
+            <p>Nenhum formulário preenchido.</p>
+            <p><a routerLink="/tecnico">Ir para a tela inicial.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+     <!-- Endereço -->
+     <div class="col-md-6">
+       <div class="card mb-4">
+         <div class="card-header">
+           <h4><i class="fas fa-map-marker-alt"></i> Endereço</h4>
+         </div>
+         <div class="card-body">
+           <table class="table table-bordered">
+             <tbody>
+               <tr>
+                 <th>Endereço</th>
+                 <td>{{paciente.endereco?.logradouro}}, {{paciente.endereco?.numero}}</td>
+               </tr>
+               <tr>
+                 <th>Bairro</th>
+                 <td>{{paciente.endereco?.bairro}}</td>
+               </tr>
+               <tr>
+                 <th>Município/UF</th>
+                 <td>{{paciente.endereco?.municipio}}/{{paciente.endereco?.uf}}</td>
+               </tr>
+               <tr>
+                 <th>CEP</th>
+                 <td>{{paciente.endereco?.cep}}</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+
+      <!-- Contatos -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h4><i class="fas fa-phone"></i> Contatos</h4>
+          </div>
+          <div class="card-body">
+            <ng-container *ngFor="let contato of paciente.contatos; let last = last">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Parentesco</th>
+                    <td>{{contato.parentesco}}</td>
+                  </tr>
+                  <tr>
+                    <th>Nome</th>
+                    <td>{{contato.nome}}</td>
+                  </tr>
+                  <tr>
+                    <th>Telefone</th>
+                    <td>{{contato.telefone}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr *ngIf="!last" />
+            </ng-container>
+          </div>
+        </div>
+      </div>
+   </div>
+</div>
