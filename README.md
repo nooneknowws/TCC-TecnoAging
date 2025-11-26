@@ -28,16 +28,7 @@ TelasTCC/
 
 ## Funcionalidades Principais
 
-O TecnoAging permite:
-* Registro de informações pessoais, de saúde e socioeconômicas de idosos.
-* Aplicação de testes padronizados como IVCF-20 e MEEM. Outros testes incluem Fatigabilidade de Pittsburgh, Nível de atividade física e sedentarismo, e o Functional Assessment of Chronic Illness Therapy - Fatigue (FACT-F).
-* Análise de resultados para identificação de fragilidades, quedas e tendências.
-* Visualização de dados e preenchimento de formulários para idosos através de uma versão acessível do aplicativo. É importante notar que, nesta versão, as respostas fornecidas não são utilizadas para análises ou incluídas em pesquisas realizadas pelos profissionais de saúde, sendo destinadas exclusivamente para proporcionar uma experiência interativa.
-* Comparação dos resultados dos testes por idade e histórico pessoal.
-* Coleta e análise de dados para identificar tendências e áreas que necessitam de intervenções.
-* Permitir ao administrador cadastrar assistentes de saúde.
-* Permitir ao assistente de saúde editar seus próprios dados pessoais e senha.
-* Permitir ao assistente de saúde o cadastro de idosos, incluindo dados pessoais, informações sobre saúde e condições sociais.
+![Arquitetura](imgs/Arquitetura/principais_funcionalidades_tecnoaging.png)
 
 ## Tecnologias Utilizadas
 
@@ -61,7 +52,7 @@ O projeto TecnoAging foi desenvolvido utilizando o framework ágil Scrum, com ad
 
 ### Etapas do Projeto
 1.  **Modelagem e Planejamento**: A primeira etapa do projeto envolveu sprints semanais dedicadas à modelagem e planejamento do sistema. Durante este período, foram elaborados diagramas UML, histórias de usuário, protótipos de telas e uma prova de conceito (PoC) baseada no questionário IVCF-20.
-2.  **Desenvolvimento**: Após a modelagem, o projeto seguiu para a fase de desenvolvimento, com sprints quinzenais focadas na implementação das funcionalidades. As funcionalidades foram implementadas por prioridade, iniciando com cadastro de técnicos e login, e avançando para edição de perfis, aplicação de questionários e visualização/comparação de resultados. A velocidade da equipe foi mensurada por um sistema de pontuação (pontos equivalentes a dias de trabalho ideais).
+2.  **Desenvolvimento**: Após a modelagem, o projeto seguiu para a fase de desenvolvimento, com sprints quinzenais focadas na implementação das funcionalidades. As funcionalidades foram implementadas por prioridade.
 
 ## Como Rodar o Backend (Docker)
 
@@ -74,6 +65,4 @@ Para construir e levantar todos os serviços do backend utilizando Docker, siga 
     ```
     Este comando irá construir as imagens Docker necessárias e iniciar todos os contêineres definidos no `docker-compose.yml`, incluindo os microsserviços e os bancos de dados.
 
-## Telas (Exemplos)
 
-### TODO
