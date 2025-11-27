@@ -17,10 +17,7 @@ TelasTCC/
 │   ├── _Tecnicos       # Microsserviço de Técnicos (Spring Boot, Java, PostgreSQL para dados de técnicos).
 │   └── Postman         # Arquivos variados de testes (ex: coleções Postman).
 ├── imgs/
-    ├── Arquitetura/    # Imagem da Arquitetura do Sistema
-    └── Telas/          # Prints das telas como Exemplo
-        ├── Mobile/     # Prints das telas mobile
-        └── Web/        # Prints das telas web
+    └── Arquitetura/    # Imagens da Arquitetura do Sistema
 └── README.md           # Documentação do projeto.
 ```
 ## Arquitetura do sistema
