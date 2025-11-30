@@ -1,6 +1,18 @@
 # TCC TecnoAging
 
-Este projeto apresenta o desenvolvimento do TecnoAging, um sistema integrado composto por uma plataforma web e um aplicativo móvel, voltado para profissionais de saúde e idosos. O sistema visa otimizar a avaliação e o cuidado da saúde da população idosa no Brasil, um tema de crescente relevância devido ao envelhecimento populacional.
+Trabalho de Conclusão de Curso do curso de **Tecnologia em Análise e Desenvolvimento de Sistemas** da **Universidade Federal do Paraná (UFPR)**.
+
+- O artigo do projeto e os artefatos de modelagem estarão disponíveis no acervo da Biblioteca da UFPR: https://bibliotecas.ufpr.br/
+
+**Integrantes da Equipe**
+- Eduardo Henrique Alberti Costa  
+- Gabriel Chioquetta Obladen  
+- Natasha Alcaide Santos  
+- Thalyson Bruck Andreatta  
+
+## Descrição do Projeto
+O TecnoAging é um sistema integrado composto por uma plataforma web e um aplicativo móvel, voltado a profissionais de saúde e idosos. O objetivo é apoiar a avaliação e o acompanhamento da saúde da população idosa no Brasil, contribuindo para tornar esse processo mais padronizado, eficiente e acessível diante do cenário de envelhecimento populacional.
+
 
 ## Estrutura do Projeto
 ```plaintext
@@ -40,8 +52,7 @@ O TecnoAging adota uma arquitetura baseada em microsserviços, garantindo escala
 * **Banco de Dados Relacional**: PostgreSQL é utilizado pelos microsserviços MS Técnicos, MS Pacientes e MS Formulários para armazenar dados estruturados e transações complexas, oferecendo robustez e recursos avançados.
 * **Banco de Dados Não Relacional (NoSQL)**: MongoDB é a escolha para o MS Auth, que gerencia a autenticação e autorização de usuários, lidando com esquemas dinâmicos e não estruturados, como tokens de autenticação e informações de sessão.
 * **Modelagem**: A modelagem do sistema utilizou diagramas UML (Unified Modeling Language) — incluindo diagramas de casos de uso, classes e sequência — criados através da ferramenta Astah.
-* **Controle de Versão**: Git e GitHub foram utilizados como repositório central para armazenar o código-fonte e gerenciar o desenvolvimento colaborativo entre os membros da equipe.
-* **Ambiente de Desenvolvimento**: O Visual Studio Code foi a principal escolha para o desenvolvimento do TecnoAging, justificada por sua flexibilidade e integração com as diversas tecnologias adotadas.
+
 
 ## Metodologia de Desenvolvimento
 
@@ -61,5 +72,7 @@ Para construir e levantar todos os serviços do backend utilizando Docker, siga 
     docker-compose up --build
     ```
     Este comando irá construir as imagens Docker necessárias e iniciar todos os contêineres definidos no `docker-compose.yml`, incluindo os microsserviços e os bancos de dados.
+
+
 
 
